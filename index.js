@@ -31,12 +31,16 @@ let questionBank = [{
   question: "Where do i live ? ",
   answer : "Banglore"
 },{
-  question: "From Whom I learnt this ? ",
-  answer : "Tanay"
+  question: "What is my favourite color ? ",
+  answer : "Blue"
 },
 {
   question:"What is my primary skillset ?",
   answer:"Kubernetes"
+},
+{
+  question:"What is my favourite dish ?",
+  answer:"Paani-Puri"
 }
 ]
 
@@ -46,13 +50,13 @@ console.log("did you guess it right  ?", guessValue);
 console.log("Your Score is : ", score);
 }
 
-console.log(`You Got ${score} out of 4 correct`);
+console.log(`You Got ${score} out of ${questionBank.length} correct`);
 //quizEngine("What is my Name ?", "Rajvansh");
 
 var leaderBoard = [
 {
   player : "Sarvjeet",
-  point:4
+  point:5
 },{
   player:"Anonymus",
   point: 3
